@@ -1,0 +1,175 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(240,240,240);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+
+}
+/* Estilos da div esquerda */
+.instagram-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 100vh;
+}
+
+.div-esquerda {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 100vh;
+}
+.div-esquerda img {
+    height: 50rem;
+}
+/* Estilos da div direita (geral)*/
+.div-direita {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+    padding: 1.3rem 0;
+
+}
+/* Estilos da div 1 (generalizando para as outras) */
+.grupo-direita {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 3px;
+    
+    background-color: white;
+    border: rgb(100,100,100) solid 1px;
+    width: 100%;
+    margin: 1.3rem 0;
+      
+    
+}
+
+/* Caixa 1--------------------------------------------------------*/
+.caixa-logo {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding-top: 20px;
+}
+
+.profile-foto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.profile-foto img {
+    width: 50%;
+    border-radius: 50%;
+
+}
+.continuar-remover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    padding-top: 20px;
+}
+.login{
+    justify-items: center;
+    align-items: center;
+    background-color: #0095f6;
+    border-radius: 5px;
+    padding: 10px;
+}
+.instagram-login {
+    color: white;
+
+}
+.logout {
+    justify-items: center;
+    align-items: center;
+    padding: 10px;
+}
+.instagram.logout {
+    color: #0095f6;
+}
+
+/*Caixa 2-------------------------------------------------------*/
+.sem-conta {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration-line: underline;
+    color: rgb(160,160, 160);
+}
+.link-azul {
+    color: blue;
+}
+
+/*Caixa 3-------------------------------------------------------*/
+.grupo-direita-baixo{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-items: center;
+      padding: 1.3rem 0;
+  }
+
+/* texto de obter-donwload*/
+.obter-app {
+align-items: center;
+text-align: center;
+font-weight: bold;
+}
+
+/* bloco contendo os links e imagens dos botoes*/
+.botoes-download {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* configuração dos links*/
+.app-download1 {
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+    background-image: url(./img/apple-button.png);
+}
+.app-download2 {
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+    background-image: url(./img/googleplay-button.png);
+}
+/*adaptação a media*/
+@media (max-width: 1024px) {
+    .instagram-wrapper {
+        width: 90%;
+    }
+}
+@media (max-width: 650px) {
+    .instagram-wrapper {
+        width: 90%;
+
+    }
+    .div-esquerda {
+        display: none;
+    }
+    .div-direita {
+        width: 100%;
+    }
+}
